@@ -1,0 +1,41 @@
+/* 
+ * This file ensures Leaflet styles are correctly loaded in Vite
+ * It imports the Leaflet CSS and fixes some common issues
+ */
+
+/* Import Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+/* Fix container height issues */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+/* Fix marker icon issues */
+.leaflet-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+/* Better popup styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 4px;
+  padding: 0;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  line-height: 1.5;
+}
+
+/* Fix Z-index issues with other UI elements */
+.leaflet-pane {
+  z-index: 1;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 10;
+} 

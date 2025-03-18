@@ -1,4 +1,10 @@
 @import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Leaflet styles */
+@import './leaflet.css';
 
 @plugin 'tailwindcss-animate';
 
